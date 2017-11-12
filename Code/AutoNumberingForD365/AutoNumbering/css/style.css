@@ -1,0 +1,179 @@
+﻿body {
+  
+}
+.header {
+    display: inline-block;
+    border-bottom: 1px solid #d6d6d6;
+    width: 100%;
+    text-align: center
+}
+.header-text{
+    font-size:20px;
+}
+.control-text {
+    display: inline-block;
+    text-align: initial;
+    width: 150px;
+    float: left;
+    display: inline-block;
+    max-height: 32px;
+    line-height: 16px;
+    max-height: 48px;
+    color: #828181 !important;
+    font-size: 14px;
+    font-family: Segoe\000020UI,Tahoma,Arial;
+}
+.control-value{
+    display:inline-block
+}
+select, input[type=text]{
+    width :150px
+}
+.controls {
+    padding: 10px 15px 10px 15px;
+}
+
+table td {
+    display: table-cell;
+    word-wrap: break-word;
+    /*padding: 12px 16px;*/
+    line-height: 1.5;
+    vertical-align: top;
+    border-width: 1px 0 0;
+
+    border-color: #e3e3e3;
+}
+
+.auto-number-options {
+float:left;
+}
+.formatOptions {
+    float: right;
+}
+table caption,table tr:first-line {
+    border-bottom: 1px solid #d6d6d6;
+    background-color: rgba(243,243,243,1);
+    padding: 10px 15px 10px 15px;
+    color: #3b3b3b;
+    padding-top: 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+table tbody td {
+  color : #505050 !important
+}
+table thead th {
+    font-family: Segoe\000020UI\000020Semibold,Tahoma,sans\00002Dserif;
+    font-size: 14px;
+    color: #505050 !important;
+    font-size: 12px;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: rgba(243,243,243,1);
+}
+button {
+    clear: both;
+    float: right;
+    margin-right: 0px;
+    vertical-align: top;
+    height: 20px;
+    border: 1px solid #D4D4D4;
+    cursor: pointer;
+    margin-left: 1px;
+    margin-bottom: 0px;
+    padding: 0 15px 0 19px;
+    font-size: 12px;
+    width: auto;
+    white-space: nowrap;
+    background: #0078D7 none;
+    color: #ffffff;
+    background-color: rgba(17,96,183,1) !important;
+}
+    button:hover {
+        border-width: 1px;
+        opacity: 0.6;
+        background: #0078D7 none !important;
+        border-color: #0072C6;
+    }
+
+
+    /*select2 changes*/
+
+/* Make Select2 boxes match Bootstrap3 heights: */
+.select2-selection__rendered {
+    line-height: 18px !important;
+    color: #1160B7 !important;
+}
+
+.select2-selection {
+    height: 25px !important;
+    color: #1160B7 !important;
+    font-family: 'Segoe UI';
+    font-size: 12px !important;
+    white-space: inherit !important;
+    font-weight: 700 !important;
+    border-radius: 0;
+    border: none !important;
+}
+
+.select2-selection__arrow {
+    height: 25px !important;
+    display: none;
+}
+
+
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 2px !important;
+    color: #1160B7 !important;
+    font-family: 'Segoe UI';
+    font-size: 12px !important;
+    white-space: inherit !important;
+    font-weight: 700 !important;
+    border: none;
+}
+
+.select2-selection--single[aria-expanded="true"] {
+    border: 1px solid #aaa !important;
+}
+
+.select2-container .select2-selection--multiple {
+    min-height: 25px !important;
+    height: 25px !important;
+}
+
+.select2-selection__choice__remove {
+    float: right !important;
+    margin-left: 3px !important;
+}
+
+
+.select-input {
+    margin-right: 5px;
+    height: 25px !important;
+    max-height: 25px !important;
+}
+
+.select2-container--default.select2-container--focus {
+    border-color: white !important;
+}
+
+.select2-selection__choice {
+    background-color: white !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #aaa !important;
+}
+
+
+.select2-container--default .select2-selection--single {
+    /*border: none;*/
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #F0F1F2;
+    color: #393A3B;
+}
+.Buttons {
+    margin: 15px;
+}

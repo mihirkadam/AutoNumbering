@@ -1,0 +1,8 @@
+C:\Users\Kadam\source\repos\AutoNumbering\Code\AutoNumberingForD365\Common\bin\Debug\netstandard1.4\Common.deps.json
+C:\Users\Kadam\source\repos\AutoNumbering\Code\AutoNumberingForD365\Common\bin\Debug\netstandard1.4\Common.dll
+C:\Users\Kadam\source\repos\AutoNumbering\Code\AutoNumberingForD365\Common\bin\Debug\netstandard1.4\Common.pdb
+C:\Users\Kadam\source\repos\AutoNumbering\Code\AutoNumberingForD365\Common\obj\Debug\netstandard1.4\Common.csprojResolveAssemblyReference.cache
+C:\Users\Kadam\source\repos\AutoNumbering\Code\AutoNumberingForD365\Common\obj\Debug\netstandard1.4\Common.csproj.CoreCompileInputs.cache
+C:\Users\Kadam\source\repos\AutoNumbering\Code\AutoNumberingForD365\Common\obj\Debug\netstandard1.4\Common.AssemblyInfo.cs
+C:\Users\Kadam\source\repos\AutoNumbering\Code\AutoNumberingForD365\Common\obj\Debug\netstandard1.4\Common.dll
+C:\Users\Kadam\source\repos\AutoNumbering\Code\AutoNumberingForD365\Common\obj\Debug\netstandard1.4\Common.pdb

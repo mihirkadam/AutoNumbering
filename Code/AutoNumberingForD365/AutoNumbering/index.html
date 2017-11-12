@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Auto Numbering</title>
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="../../../ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    <!--jquery-->
+    <script src="js/jquery3.2.1.min.js"></script>
+
+    <!--select2-->
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <script src="js/select2.min.js"></script>
+
+    <!--Web API library-->
+    <script src="js/webapi.js"></script>
+
+   
+    <!--business logic-->
+    <script src="js/DataAccessLayer.js"></script>
+    <script src="js/BusinessLayer.js"></script>
+
+
+
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="header" style="display:inline-block">
+            <img src="images/AutoNumber.png" width="150" height="50" /> <div class="header-text">Auto Numbering</div>
+        </div>
+        <div class="body">
+            <div class="auto-number-options">
+                <div class="controls">
+                    <div class="control-text">
+                        Entity
+                    </div>
+                    <div class="control-value">
+                        <select id="entitySelection"></select>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="control-text">
+                        Field
+                    </div>
+                    <div class="control-value">
+                        <select id="fieldSelection"></select>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="control-text">
+                        Format
+                    </div>
+                    <div class="control-value">
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="control-text">
+                        Seed (Start From)
+                    </div>
+                    <div class="control-value">
+                        <input type="text" />
+                    </div>
+                </div>
+                <div class="Buttons">
+                    <button>Update</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="information">
+            <div class="formatOptions">
+                <table>
+                    <caption> Format Option</caption>
+                    <thead>
+                        <tr>
+                            <th style="text-align:left" class="">Auto Number Format value</th>
+                            <th style="text-align:left">Example value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:left"><code class="">CAR-{SEQNUM:3}-{RANDSTRING:6}</code></td>
+                            <td style="text-align:left"><code>CAR-123-AB7LSF</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left" class=""><code>CNR-{RANDSTRING:4}-{SEQNUM:4}</code></td>
+                            <td style="text-align:left"><code>CNR-WXYZ-1000</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><code>{SEQNUM:6}-#-{RANDSTRING:3}</code></td>
+                            <td style="text-align:left"><code>123456-#-R3V</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><code>KA-{SEQNUM:4}</code></td>
+                            <td style="text-align:left"><code>KA-0001</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left" class=""><code>{SEQNUM:10}</code></td>
+                            <td style="text-align:left"><code>1234567890</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><code>QUO-{SEQNUM:3}#{RANDSTRING:3}#{RANDSTRING:5}</code></td>
+                            <td style="text-align:left"><code>QUO-123#ABC#PQ2ST</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><code>QUO-{SEQNUM:7}{RANDSTRING:5}</code></td>
+                            <td style="text-align:left"><code>QUO-0001000P9G3R</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><code>CAS-{SEQNUM:6}-{RANDSTRING:6}-{DATETIMEUTC:yyyyMMddhhmmss}</code></td>
+                            <td style="text-align:left"><code>CAS-002000-S1P0H0-20170913091544</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><code>CAS-{SEQNUM:6}-{DATETIMEUTC:yyyyMMddhh}-{RANDSTRING:6}</code></td>
+                            <td style="text-align:left"><code>CAS-002002-2017091309-HTZOUR</code></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left"><code>CAS-{SEQNUM:6}-{DATETIMEUTC:yyyyMM}-{RANDSTRING:6}-{DATETIMEUTC:hhmmss}</code></td>
+                            <td style="text-align:left"><code class="">CAS-002000-201709-Z8M2Z6-110901</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         
+        </div>
+
+        <div class="footer">
+        </div>
+    </div>
+
+</body>
+</html>
